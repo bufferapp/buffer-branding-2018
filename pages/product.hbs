@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {{> ../snippets/head.hbs }}
+</head>
+<body>
+  {{> ../components/menu/index.hbs }}
+  {{> ../components/header/index.hbs fixed=true }}
+  {{> ../components/masthead/index.hbs
+    leftAlign=true
+    image='/img/publish-dashboard.png'
+    heading='Buffer Publish'
+    subheading='A better way to plan and schedule your social media marketing'
+    description='Save time and energy with the smoothest social media tool for scheduling posts, analyzing performance, and collaborating with your team'
+    callToActionLink='http://google.com'
+    callToActionText='Schedule Your First Post Now'
+    rightCornerFill=true
+    animation=true
+  }}
+  {{> ../components/logowall/index.hbs animation=true }}
+  {{> ../components/board/index.hbs secondary=true animation=true }}
+  {{> ../components/carousel/index.hbs primary=true }}
+  {{> ../components/plans/index.hbs secondary=true }}
+  {{> ../components/grid/index.hbs }}
+  {{> ../components/banner/index.hbs green=true }}
+  {{> ../components/testimonials/index.hbs }}
+  {{> ../components/footer/index.hbs }}
+  {{> ../snippets/scripts.hbs }}
+</body>
+</html>

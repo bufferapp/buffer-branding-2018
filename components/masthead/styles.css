@@ -1,0 +1,256 @@
+.masthead {
+  background-color: #fbfbfb;
+  display: flex;
+  flex-direction: column;
+  margin-top: 55px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.masthead__container {
+  @mixin m-outer-container;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 520px;
+  height: auto;
+  width: 100%;
+  z-index: 1;
+  @media (--medium-screen) {
+    min-height: 620px;
+  }
+}
+
+.masthead__content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 0;
+  width: 100%;
+  @media (--medium-screen) {
+    padding: 100px 0;
+  }
+  @media (min-width: 960px) {
+    flex-direction: row;
+    background-size: 100%;
+  }
+}
+
+.masthead__wrapper {
+  position: relative;
+  transform: translate(0, 0) translateZ(0);
+  transition: 0.5s;
+  transition-delay: 0.2s;
+}
+
+.masthead__backgroundImage {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  @media (--medium-screen) {
+    object-position: 50% 50%;
+  }
+}
+
+.masthead__lampshade {
+  background-color: rgba(70, 83, 97, 0.6);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.masthead__heading {
+  font-family: var(--heading-font-family);
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 10px;
+
+  @media (--medium-screen) {
+    font-size: 50px;
+    line-height: 53px;
+    margin-bottom: 25px;
+  }
+}
+
+.masthead__subheading {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 22px;
+  margin: 0 auto;
+  max-width: 400px;
+
+  @media (--medium-screen) {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  a {
+    color: var(--blue);
+    display: inline-block;
+    border-bottom: 1px solid var(--blue);
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 10px;
+    @media (--medium-screen) {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+}
+
+.masthead__description {
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 15px;
+  max-width: 420px;
+
+  @media (--medium-screen) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.masthead__footer {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.masthead__callToAction {
+  font-size: 14px;
+  padding: 8px 35px;
+  margin-top: 25px;
+  @media (--medium-screen) {
+    font-size: 18px;
+    padding: 14px 55px;
+    margin-top: 55px;
+  }
+}
+
+.masthead__image {
+  position: relative;
+  transform: translateZ(0);
+  transition: 1s;
+  order: 2;
+
+  @media (min-width: 960px) {
+    order: 1;
+    margin-right: -120px;
+  }
+}
+
+.masthead__image--mobile {
+  display: block;
+  margin-top: 30px;
+  width: 100%;
+
+  @media (min-width: 960px) {
+    display: none;
+  }
+}
+.masthead__image--desktop {
+  display: none;
+  @media (min-width: 960px) {
+    display: block;
+  }
+}
+
+.masthead__leftCornerFill {
+  background-image: url('/img/triangle-gradient.svg');
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  bottom: 0;
+  height: 306px;
+  left: 0;
+  position: absolute;
+  width: 639px;
+
+  @media (--large-screen) {
+    background-size: 100%;
+  }
+}
+
+.masthead__rightCornerFill {
+  background-image: url('/img/triangle-gradient-right.svg');
+  background-repeat: no-repeat;
+  background-position: initial;
+  background-size: 100%;
+  bottom: 0;
+  height: 300px;
+  right: 0;
+  position: absolute;
+  width: 1539px;
+
+  @media (--large-screen) {
+    height: 535px;
+  }
+}
+
+.masthead--leftAlign {
+  text-align: left;
+
+  .masthead__content {
+    @media (--medium-screen) {
+      justify-content: space-between;
+    }
+  }
+  @media (--medium-screen) {
+    .newsletter__wrapper {
+      justify-content: flex-start;
+      margin-left: -20px;
+    }
+  }
+
+  .masthead__subheading {
+    margin: 0;
+  }
+}
+
+.masthead--animate .masthead__wrapper {
+  opacity: 0;
+  transform: translate(-50px, 0) translateZ(0);
+}
+
+.masthead--animate .masthead__image {
+  opacity: 0;
+}
+
+.masthead--green {
+  .masthead__leftCornerFill {
+    background-image: url('/img/triangle-gradient-green.svg');
+  }
+
+  .masthead__rightCornerFill {
+    background-image: url('/img/triangle-gradient-green-right.svg');
+  }
+}
+
+.masthead--darkblue {
+  .masthead__leftCornerFill {
+    background-image: url('/img/triangle-gradient-darkblue.svg');
+  }
+
+  .masthead__rightCornerFill {
+    background-image: url('/img/triangle-gradient-green-right.svg');
+  }
+}
+
+.masthead--gray {
+  .masthead__leftCornerFill {
+    background-image: url('/img/triangle-gradient-gray.svg');
+  }
+
+  .masthead__rightCornerFill {
+    background-image: url('/img/triangle-gradient-gray-right.svg');
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {{> ../snippets/head.hbs }}
+</head>
+<body>
+  {{> ../components/menu/index.hbs }}
+  {{> ../components/header/index.hbs fixed=true }}
+  {{> ../components/masthead/index.hbs
+    leftAlign=true
+    backgroundMobileImage='/img/masthead-generic.jpg'
+    backgroundDesktopImage='/img/masthead-generic-desktop.jpg'
+    heading='Join the Buffer<br>Journey'
+    subheading='Working at Buffer is more than just a job. Want to come along for the ride?<br><a href="#">Learn More About Us</a>'
+    callToActionLink='http://google.com'
+    callToActionText='Start your Buffer journey'
+    leftCornerFill=true
+    animation=true
+  }}
+  {{> ../components/carousel/index.hbs secondary=true }}
+
+  {{> ../components/imageTextPanel/index.hbs 
+    heading="What is Buffer?"
+    description="We're a team of 72 people working to make people's lives easier on social media. Buffer provides tools to help individuals, businesses and publishers build an audience online and engage with followers as effectively as possible.<br><br>Buffer was started in 2010 as a simple way to schedule posts on Twitter. Today we're honored to be the tool that more than 4 million amazing customers use to easily manage their social media presence."
+    image="/img/thumbsup.png"
+    animate=true
+  }}
+
+  {{> ../components/quote/index.hbs
+    centered=true
+    quote='If I have seen further it is by standing on the shoulders of giants.'
+    author='Issac Newton'
+    callToActionLink='#'
+    callToActionText='More About Buffer\'s Story'
+  }}
+
+  {{> ../components/board/index.hbs tertiary=true }}
+
+  {{> ../components/listCard/index.hbs }}
+
+  {{> ../components/footer/index.hbs }}
+  {{> ../snippets/scripts.hbs }}
+</body>
+</html>

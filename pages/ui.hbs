@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {{> ../snippets/head.hbs }}
+
+  <style>
+  .styleguide__title {
+    margin: 40px 20px;
+    text-align: center;
+  }
+
+  .styleguide__component {
+    border-bottom: solid 2px #000;
+    margin: 40px 20px;
+    padding: 10px 0;
+  }
+
+  .styleguide__row {
+    padding: 0 20px;
+  }
+  </style>
+</head>
+<body>
+
+  <div class="styleguide">
+    <h1 class="styleguide__title">Styleguide</h1>
+
+    <h2 class="styleguide__component">Buttons</h2>
+    <div class="styleguide__row">
+      <a href="#" class="button" style="margin-right: 10px;">Default</a>
+      <a href="#" class="button button--secondary" style="margin-right: 10px;">Secondary</a>
+      <a href="#" class="button button--stroke">Stroke</a>
+    </div>
+
+    <h2 class="styleguide__component">Header</h2>
+    {{> ../components/menu/index.hbs }}
+    {{> ../components/header/index.hbs static=true }}
+
+    <h2 class="styleguide__component">Footer</h2>
+    {{> ../components/footer/index.hbs }}
+
+    <h2 class="styleguide__component">Masthead</h2>
+    {{> ../components/masthead/index.hbs
+      leftAlign=true
+      backgroundMobileImage='/img/masthead-homepage.jpg'
+      backgroundDesktopImage='/img/masthead-homepage-desktop.jpg'
+      heading='Worry-free social<br>media management'
+      subheading='Plan, schedule, analyze, and engage, using a streamlined set of social media tools'
+      newsletter=true
+      leftCornerFill=true
+      animation=true
+    }}
+
+    {{> ../components/masthead/index.hbs
+      leftAlign=true
+      image='/img/publish-dashboard.png'
+      heading='Buffer Publish'
+      subheading='A better way to plan and schedule your social media marketing'
+      description='Save time and energy with the smoothest social media tool for scheduling posts, analyzing performance, and collaborating with your team'
+      callToActionLink='http://google.com'
+      callToActionText='Schedule Your First Post Now'
+      rightCornerFill=true
+      animation=true
+    }}
+
+    {{> ../components/masthead/index.hbs
+      leftAlign=true
+      backgroundMobileImage='/img/masthead-generic.jpg'
+      backgroundDesktopImage='/img/masthead-generic-desktop.jpg'
+      heading='Join the Buffer<br>Journey'
+      subheading='Working at Buffer is more than just a job. Want to come along for the ride?<br><a href="#">Learn More About Us</a>'
+      buttonBottom=true
+      callToActionLink='http://google.com'
+      callToActionText='Start your Buffer journey'
+      leftCornerFill=true
+      animation=true
+    }}
+
+    {{> ../components/masthead/index.hbs
+      heading='About Buffer'
+      subheading='Buffer is the best way to drive traffic, increase fan engagement and save time on social media.'
+      newsletter=true
+      leftCornerFill=true
+      animation=true
+      short=true
+    }}
+
+    {{> ../components/masthead/index.hbs
+      heading='About Buffer'
+      subheading='This is the green alternate.'
+      callToActionText="Get Started"
+      callToActionLink="http://buffer.com"
+      leftCornerFill=true
+      green=true
+      animation=true
+    }}
+
+    {{> ../components/masthead/index.hbs
+      heading='About Buffer'
+      subheading='This is the gray alternate'
+      callToActionText="Get Started"
+      callToActionLink="http://buffer.com"
+      leftCornerFill=true
+      gray=true
+      animation=true
+    }}
+
+    {{> ../components/masthead/index.hbs
+      heading='About Buffer'
+      subheading='This is the dark blue alternate'
+      callToActionText="Get Started"
+      callToActionLink="http://buffer.com"
+      leftCornerFill=true
+      darkBlue=true
+      animation=true
+    }}
+
+    {{> ../components/masthead/index.hbs
+      heading='About Buffer'
+      subheading='This is the green alternate with a right corner fill.'
+      callToActionText="Get Started"
+      callToActionLink="http://buffer.com"
+      rightCornerFill=true
+      green=true
+      animation=true
+    }}
+
+
+    <h2 class="styleguide__component">Banner</h2>
+    {{> ../components/banner/index.hbs }}
+    {{> ../components/banner/index.hbs green=true }}
+
+    <h2 class="styleguide__component">Quote</h2>
+    {{> ../components/quote/index.hbs
+      img='/img/quote-img.jpg'
+      quote='We\'ve had a 150 percent increase in pageviews from social media since joining Buffer.'
+      author='Andrew Macrae, Seattle Times'
+      callToActionLink='#'
+      callToActionText='Read case study'
+    }}
+
+    {{> ../components/quote/index.hbs
+      centered=true
+      quote='We\'ve had a 150 percent increase in pageviews from social media since joining Buffer.'
+      author='Andrew Macrae, Seattle Times'
+      callToActionLink='#'
+      callToActionText='Read case study'
+    }}
+
+    <h2 class="styleguide__component">Logowall</h2>
+    {{> ../components/logowall/index.hbs animation=true }}
+
+    <h2 class="styleguide__component">Board</h2>
+    {{> ../components/board/index.hbs primary=true animation=true }}
+    {{> ../components/board/index.hbs secondary=true animation=true }}
+    {{> ../components/board/index.hbs tertiary=true animation=true }}
+
+    <h2 class="styleguide__component">Plans</h2>
+    {{> ../components/plans/index.hbs primary=true }}
+    {{> ../components/plans/index.hbs secondary=true }}
+    {{> ../components/plans/index.hbs tertiary=true }}
+
+    <h2 class="styleguide__component">Carousel</h2>
+    {{> ../components/carousel/index.hbs primary=true }}
+    {{> ../components/carousel/index.hbs secondary=true }}
+
+    <h2 class="styleguide__component">Grid</h2>
+    {{> ../components/grid/index.hbs }}
+
+    <h2 class="styleguide__component">Testimonials</h2>
+    {{> ../components/testimonials/index.hbs }}
+
+    <h2 class="styleguide__component">List Card</h2>
+    {{> ../components/listCard/index.hbs }}
+
+    <h2 class="styleguide__component">FAQ</h2>
+    {{> ../components/faq/index.hbs }}
+
+    <h2 class="styleguide__component">Brochure</h2>
+    {{> ../components/brochure/index.hbs }}
+
+    <h2 class="styleguide__component">Team</h2>
+    {{> ../components/team/index.hbs }}
+   
+  </div>
+
+  {{> ../snippets/scripts.hbs }}
+</body>
+</html>

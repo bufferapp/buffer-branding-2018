@@ -1,0 +1,152 @@
+.team {
+  padding: 100px 0;
+}
+
+.team__container {
+  @mixin m-outer-container;
+}
+
+.team__header {
+  margin-bottom: 40px;
+  @media (--medium-screen) {
+    display: flex;
+    margin-bottom: 100px;
+  }
+}
+
+.team__headerText {
+  @media (--medium-screen) {
+    padding-right: 175px;
+  }
+}
+
+.team__heading {
+  font-family: var(--heading-font-family);
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: normal;
+  margin-bottom: 30px;
+  max-width: 540px;
+  @media (--medium-screen) {
+    font-size: 50px;
+    line-height: 53px;
+  }
+
+  &:after {
+    background-color: var(--blue);
+    content: '';
+    display: block;
+    position: relative;
+    height: 3px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 72px;
+  }
+}
+
+.team__subheading {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 10px;
+  font-weight: normal;
+  @media (--medium-screen) {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.team__description {
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  @media (--medium-screen) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+.team__link {
+  color: var(--blue);
+  display: block;
+  font-size: 14px;
+  line-height: 22px;
+  @media (--medium-screen) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.team__headerImage {
+  display: none;
+  @media (--medium-screen) {
+    display: block;
+    width: 294px;
+    height: 277px;
+    min-width: 294px;
+    min-height: 277px;
+  }
+}
+
+.team__item {
+  margin-bottom: 40px;
+  text-align: center;
+  width: 50%;
+  min-width: 50%;
+  @media (--medium-screen) {
+    margin-bottom: 70px;
+    width: 33.33%;
+    min-width: 33.33%;
+  }
+}
+
+.team__avatar {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto 10px;
+  @media (--medium-screen) {
+    width: 175px;
+    height: 175px;
+  }
+}
+
+.team__itemHeading {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+.team__itemSubheading {
+  font-size: 14px;
+  line-height: 22px;
+  @media (--medium-screen) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.team__chevron {
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+}
+
+.team__button {
+  align-items: center;
+  color: var(--blue);
+  cursor: pointer;
+  justify-content: center;
+  display: flex;
+}
+
+.team__row {
+  display: none;
+  &:first-child {
+    display: block;
+  }
+}
+
+.team__rowWrapper {
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,160 @@
+.menu {
+  background-color: var(--white);
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transform: translateX(100%);
+  transition: transform 0.3s;
+  width: 100%;
+  z-index: 20;
+}
+
+.menu.isActive {
+  transform: translateX(0);
+  transition: transform 0.3s;
+}
+
+.menu__header {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  height: 55px;
+  padding: 0 var(--gutter-width);
+}
+
+.menu__logo {
+  height: 20px;
+  width: 90px;
+}
+
+.menu__closeButton {
+  cursor: pointer;
+  height: 18px;
+  transition: all 0.2s ease;
+  width: auto;
+}
+
+.menu__closeButtonBar {
+  background: var(--black);
+  display: block;
+  height: 2px;
+  margin: 3px auto;
+  transition: all 0.2s ease;
+  width: 18px;
+}
+
+.menu__closeButtonBar--middle {
+  margin: 0 auto;
+}
+
+.menu__closeButtonBar--top {
+  transform: translateY(5px) rotateZ(45deg);
+}
+
+.menu__closeButtonBar--bottom {
+  transform: translateY(-5px) rotateZ(-45deg);
+}
+
+.menu__closeButtonBar--middle {
+  width: 0;
+}
+
+.menu__list {
+  height: calc(100vh - 55px - 100px);
+  overflow: scroll;
+  padding: 35px var(--gutter-width);
+  text-align: center;
+}
+
+.menu__listItem {
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:last-child:after {
+    display: none;
+  }
+
+  &:after {
+    background-color: var(--gray);
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.3s;
+    transform: translateX(-50%);
+    width: 180px;
+  }
+}
+
+.menu__listItem.isActive:after {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.menu__listItemHeading {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  font-size: 24px;
+  justify-content: center;
+  line-height: 46px;
+  padding: 25px 0;
+}
+
+.menu__listItemArrow {
+  height: 5px;
+  margin-left: 15px;
+  width: 10px;
+}
+
+.menu__sublist {
+  display: none;
+  padding: 10px 0;
+}
+
+.menu__sublistItem {
+  border-bottom: 1px solid var(--gray);
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+
+  &:last-child {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+.menu__sublistItemHeading {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+
+.menu__sublistItemSubheading {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.menu__footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  padding: 0 var(--gutter-width);
+}
+
+.menu__button {
+  display: inline-block;
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

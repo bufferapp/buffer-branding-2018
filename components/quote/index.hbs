@@ -1,0 +1,21 @@
+<section class="quote{{#if centered}} quote--centered{{/if}}">
+
+  {{#if img }}
+    <img class="quote__img" src="{{ img }}" alt="" />
+  {{/if}}
+  <blockquote class="quote__container">
+    <p class="quote__content">
+      <span class="quote__quotes quote__quotes--left">&ldquo;</span>
+      {{ quote }}<span class="quote__quotes quote__quotes--right">&rdquo;</span>
+    </p>
+
+    <p class="quote__author">
+      {{ author }}
+    </p>
+
+    <a class="quote__link" href="{{ callToActionLink }}">
+      {{ callToActionText }}
+    </a>
+  </blockquote>
+
+</section>

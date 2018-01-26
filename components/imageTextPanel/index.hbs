@@ -1,0 +1,15 @@
+<section class="imageTextPanel {{#if animation}} imageTextPanel--animate {{/if}}">
+    <div class="imageTextPanel__container">
+      <div class="imageTextPanel__list">
+        <article class="imageTextPanel__row" data-scroll="offset(0,-150px)">
+          <div class="imageTextPanel__rowText">
+            <h4 class="imageTextPanel__rowHeading">{{heading}}</h4>
+            <p class="imageTextPanel__rowDescription">
+              {{{description}}}
+            </p>
+          </div>
+          <img class="imageTextPanel__rowImage" src="{{image}}" />
+        </article>
+      </div>
+    </div>
+  </section>

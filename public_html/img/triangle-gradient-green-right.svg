@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1281px" height="479px" viewBox="0 0 1281 479" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 25</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0.25781251%" y1="49.7500002%" x2="47.0973624%" y2="49.7500002%" id="linearGradient-1">
+            <stop stop-color="#A6F4E5" offset="0%"></stop>
+            <stop stop-color="#23E6BF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Type-+-Screenshot,-Turquoise" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, -229.000000)">
+        <polygon id="Rectangle-25" fill="url(#linearGradient-1)" points="1288 227 1288 725.806167 -64 725.806167"></polygon>
+    </g>
+</svg>

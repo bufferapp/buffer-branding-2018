@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {{> ../snippets/head.hbs }}
+
+  <style>
+  .hub {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+  }
+
+  .hub__list {
+    margin: 20px 0 40px 25px;
+  }
+
+  .hub__listItem {
+    display: list-item;
+    margin-bottom: 10px;
+  }
+  </style>
+</head>
+<body>
+
+  <div class="hub">
+    <h1><img class="header__logo" src="/img/logo.svg" alt="Buffer"></h1>
+
+    <ul class="hub__list">
+      <li class="hub__listItem"><a href="/ui.html">Styleguide</a></li>
+      <li class="hub__listItem"><a href="/home.html">Home</a></li>
+      <li class="hub__listItem"><a href="/product.html">Product</a></li>
+      <li class="hub__listItem"><a href="/landing-1.html">Landing Page 1</a></li>
+      <li class="hub__listItem"><a href="/landing-2.html">Landing Page 2</a></li>
+    </ul>
+  </div>
+
+  {{> ../snippets/scripts.hbs }}
+</body>
+</html>

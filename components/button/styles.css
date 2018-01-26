@@ -1,0 +1,82 @@
+.button {
+  background-color: var(--blue);
+  border: 1px solid transparent;
+  border-radius: 1000px;
+  color: var(--white);
+  display: inline-block;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 10px 30px;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: lighten(var(--blue), 20%);
+    transition: background-color 0.3s;
+  }
+}
+
+.button--primary {
+  background-color: var(--blue);
+  border: 1px solid transparent;
+  border-radius: 1000px;
+  color: var(--white);
+  display: inline-block;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 10px 30px;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: lighten(var(--blue), 20%);
+    transition: background-color 0.3s;
+  }
+}
+
+.button--secondary {
+  background-color: var(--black);
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: lighten(var(--black), 30%);
+    transition: background-color 0.3s;
+  }
+}
+
+.button--stroke {
+  background-color: transparent;
+  border: 1px solid var(--black);
+  color: var(--black);
+  transition: background-color 0.3s, color 0.3s;
+  &:hover {
+    background-color: var(--black);
+    transition: background-color 0.3s, color 0.3s;
+    color: var(--white);
+  }
+}
+
+.button--tertiary {
+  border-radius: 1000px;
+  border: 1px solid var(--blue-dark);
+  background-color: var(--blue-dark);
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: lighten(var(--blue-dark), 20%);
+    transition: background-color 0.3s;
+  }
+}
+
+.button--large {
+  @media (--medium-screen) {
+    font-size: 18px;
+    padding: 14px 45px;
+  }
+}
+
+.button--icon {
+  align-content: center;
+  justify-content: space-between;
+  display: inline-flex;
+}
+
+.button__icon {
+  height: 20px;
+  margin-left: 10px;
+  width: 20px;
+}

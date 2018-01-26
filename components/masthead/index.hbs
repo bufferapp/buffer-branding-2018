@@ -1,0 +1,57 @@
+<section class="masthead{{#if leftAlign }} masthead--leftAlign{{/if}}{{#if animation }} masthead--animate{{/if}}{{#if green }} masthead--green{{/if}}{{#if darkBlue }} masthead--darkblue{{/if}}{{#if gray }} masthead--gray{{/if}}">
+  {{#if backgroundDesktopImage }}
+    {{#if backgroundMobileImage }}
+    <picture>
+      <source srcset="{{backgroundDesktopImage}}" media="(min-width: 760px)">
+      <source srcset="{{backgroundDesktopImage}}" media="(min-width: 414px)">
+      <img class="masthead__backgroundImage" srcset="{{backgroundMobileImage}}">
+    </picture>
+    {{/if}}
+  {{/if}}
+  <div class="masthead__container">
+    <article class="masthead__content">
+      <div class="masthead__wrapper">
+        {{#if heading }}
+          <h2 class="masthead__heading">{{{heading}}}</h2>
+        {{/if}}
+
+        {{#if subheading }}
+          <h3 class="masthead__subheading">{{{subheading}}}</h3>
+        {{/if}}
+
+        {{#if description }}
+          <p class="masthead__description">{{{description}}}</p>
+        {{/if}}
+
+        <div class="masthead__footer">
+          {{#if image }}
+            <img class="masthead__image masthead__image--mobile" src="{{image}}" />
+          {{/if}}
+
+          {{#if newsletter }}
+            {{> ../newsletter/index.hbs }}
+          {{/if}}
+
+          {{#if callToActionText }}
+            {{#if callToActionLink }}
+            <a class="masthead__callToAction button button--large button--tertiary" href="{{callToActionLink}}">{{callToActionText}}</a>
+            {{/if}}
+          {{/if}}
+        </div>
+      </div>
+
+      {{#if image }}
+        <img class="masthead__image masthead__image--desktop" src="{{image}}" />
+      {{/if}}
+
+    </article>
+  </div>
+
+  {{#if leftCornerFill }}
+    <div class="masthead__leftCornerFill"></div>
+  {{/if}}
+
+  {{#if rightCornerFill }}
+    <div class="masthead__rightCornerFill"></div>
+  {{/if}}
+</section>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {{> ../snippets/head.hbs }}
+</head>
+<body>
+  {{> ../components/menu/index.hbs }}
+  {{> ../components/header/index.hbs fixed=true }}
+  {{> ../components/masthead/index.hbs
+    heading='About Buffer'
+    subheading='Buffer is the best way to drive traffic, increase fan engagement and save time on social media.'
+    newsletter=true
+    leftCornerFill=true
+    animation=true
+  }}
+  {{> ../components/team/index.hbs }}
+  {{> ../components/brochure/index.hbs }}
+  {{> ../components/banner/index.hbs green=true }}
+  {{> ../components/footer/index.hbs }}
+  {{> ../snippets/scripts.hbs }}
+</body>
+</html>

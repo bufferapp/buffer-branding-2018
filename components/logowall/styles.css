@@ -1,0 +1,56 @@
+.logowall {
+  padding: 115px 20px;
+  text-align: center;
+}
+
+.logowall__heading {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
+.logowall__list {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 890px;
+  opacity: 1;
+  transform: translateZ(0);
+  transition: 0.5s;
+}
+
+.logowall__item {
+  transform: translateZ(0);
+  transition: 1s;
+  width: 33.33%;
+  @media (--medium-screen) {
+    width: 20%;
+  }
+}
+
+.logowall--animate .logowall__item,
+.logowall--animate.is-hidden .logowall__item {
+  opacity: 0;
+}
+
+.logowall--animate.is-visible .logowall__item {
+  opacity: 1;
+}
+
+.logowall--animate .logowall__item:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.logowall--animate .logowall__item:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.logowall--animate .logowall__item:nth-child(4) {
+  transition-delay: 0.3s;
+}
+
+.logowall--animate .logowall__item:nth-child(5) {
+  transition-delay: 0.4s;
+}

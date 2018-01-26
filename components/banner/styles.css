@@ -1,0 +1,29 @@
+.banner {
+  align-items: center;
+  background-image: linear-gradient(
+    -90deg,
+    var(--blue-light) 0%,
+    var(--blue) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  padding: 130px 0;
+  text-align: center;
+}
+
+.banner--green {
+  background-image: linear-gradient(-90deg, #a6f4e5 0%, #23e6bf 47%);
+}
+
+.banner__heading {
+  color: var(--white);
+  font-family: var(--heading-font-family);
+  font-size: 24px;
+  margin-bottom: 30px;
+  padding: 0 30px;
+
+  @media (--medium-screen) {
+    font-size: 50px;
+    padding: 0;
+  }
+}

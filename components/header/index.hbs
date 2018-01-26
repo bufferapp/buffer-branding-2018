@@ -1,0 +1,79 @@
+<header class="header {{#if fixed}} header--fixed{{/if}} {{#if animation}} header--animate {{/if}}">
+  <a href="/"><img class="header__logo" src="/img/logo.svg" alt="Buffer"></a>
+  <nav class="header__primaryNav">
+    <div class="header__primaryNavItem">
+      <div class="header__primaryNavItemContainer">
+        Products
+        <svg class="header__primaryNavChevron">
+          <use xlink:href="/dist/symbol-defs.svg#chevron-down"></use>
+        </svg>
+      </div>
+      <div class="header__dropdown">
+        <a class="header__dropdownItem" href="#">
+          <div class="header__dropdownHeading">
+            Buffer Publish
+          </div>
+          <div class="header__dropdownSubheading">
+            Content collaboration and scheduling
+          </div>
+        </a>
+        <a class="header__dropdownItem" href="#">
+          <div class="header__dropdownHeading">
+            Buffer Reply
+          </div>
+          <div class="header__dropdownSubheading">
+            Unified team inbox and support
+          </div>
+        </a>
+        <a class="header__dropdownItem" href="">
+          <div class="header__dropdownHeading">
+            Buffer Analyze
+          </div>
+          <div class="header__dropdownSubheading">
+            Analytics and marketing insights
+          </div>
+        </a>
+      </div>
+    </div>
+    <a class="header__primaryNavItem" href="#">
+      <div class="header__primaryNavItemContainer">
+        Pricing
+      </div>
+    </a>
+    <div class="header__primaryNavItem">
+      <div class="header__primaryNavItemContainer">
+        Blog
+        <svg class="header__primaryNavChevron">
+          <use xlink:href="/dist/symbol-defs.svg#chevron-down"></use>
+        </svg>
+      </div>
+      <div class="header__dropdown">
+        <a class="header__dropdownItem" href="#">
+          <div class="header__dropdownHeading">
+            Buffer Social
+          </div>
+          <div class="header__dropdownSubheading">
+            Thoughts on social media and online marketing
+          </div>
+        </a>
+        <a class="header__dropdownItem" href="#">
+          <div class="header__dropdownHeading">
+            Buffer Open
+          </div>
+          <div class="header__dropdownSubheading">
+            Our Journey to great productivity, more transparency and a happier workplace
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="header__buttonGroup">
+      <a class="header__button button" href="#">Log in</a>
+      <a class="header__button button button--stroke" href="#">Sign up</a>
+    </div>
+  </nav>
+  <div class="header__hamburger">
+    <div class="header__hamburgerBar header__hamburgerBar--top"></div>
+    <div class="header__hamburgerBar header__hamburgerBar--middle"></div>
+    <div class="header__hamburgerBar header__hamburgerBar--bottom"></div>
+  </div>
+</header>

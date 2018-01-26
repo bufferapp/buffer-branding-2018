@@ -1,0 +1,11 @@
+.git
+.gitignore
+.gitlab-ci.yml
+.npmrc
+.rsyncignore
+npm-shrinkwrap.json
+package.json
+id_rsa
+node_modules
+npm-debug.log
+yarn.lock

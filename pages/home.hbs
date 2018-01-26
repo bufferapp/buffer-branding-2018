@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {{> ../snippets/head.hbs }}
+</head>
+<body>
+  {{> ../components/menu/index.hbs }}
+
+  {{> ../components/header/index.hbs fixed=true }}
+
+  {{> ../components/masthead/index.hbs
+    leftAlign=true
+    backgroundMobileImage='/img/masthead-homepage.jpg'
+    backgroundDesktopImage='/img/masthead-homepage-desktop.jpg'
+    heading='Worry-free social<br>media management'
+    subheading='Plan, schedule, analyze, and engage, using a streamlined set of social media tools'
+    newsletter=true
+    leftCornerFill=true
+    animation=true
+  }}
+
+  {{> ../components/board/index.hbs primary=true animation=true }}
+
+  {{> ../components/banner/index.hbs
+    color='green'
+    heading='Get the social media results you deserve.'
+  }}
+
+  {{> ../components/quote/index.hbs
+    img='/img/quote-img.jpg'
+    quote='We\'ve had a 150 percent increase in pageviews from social media since joining Buffer.'
+    author='Andrew Macrae, Seattle Times'
+    callToActionLink='#'
+    callToActionText='Read case study'
+  }}
+
+  {{> ../components/plans/index.hbs primary=true }}
+
+  {{> ../components/faq/index.hbs }}
+
+  {{> ../components/banner/index.hbs }}
+
+  {{> ../components/footer/index.hbs }}
+
+  {{> ../snippets/scripts.hbs }}
+</body>
+</html>

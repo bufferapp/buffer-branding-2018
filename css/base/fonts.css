@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Mark Pro';
+  src: url('/fonts/markpro/MarkPro-Bold.eot');
+  src: url('/fonts/markpro/MarkPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/markpro/MarkPro-Bold.woff2') format('woff2'),
+    url('/fonts/markpro/MarkPro-Bold.woff') format('woff'),
+    url('/fonts/markpro/MarkPro-Bold.ttf') format('truetype'),
+    url('/fonts/markpro/MarkPro-Bold.svg#MarkPro-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}

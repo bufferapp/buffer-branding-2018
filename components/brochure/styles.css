@@ -1,0 +1,218 @@
+.brochure {
+  background-color: var(--blue);
+  padding: 40px 0;
+  position: relative;
+  @media (--medium-screen) {
+    padding: 100px 0;
+  }
+
+  &:after {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 300px 500px;
+    border-color: transparent transparent #fbfbfb transparent;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    @media (--medium-screen) {
+      border-width: 0 0 600px 1200px;
+    }
+  }
+}
+
+.brochure__container {
+  @mixin m-outer-container;
+  position: relative;
+  z-index: 1;
+}
+
+.brochure__header {
+  text-align: center;
+  margin-bottom: 30px;
+  max-width: 520px;
+  margin: 0 auto 30px;
+  @media (--medium-screen) {
+    margin: 0 auto 100px;
+  }
+}
+
+.brochure__heading {
+  color: var(--white);
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 15px;
+  @media (--medium-screen) {
+    font-size: 50px;
+    margin-bottom: 35px;
+  }
+}
+
+.brochure__subheading {
+  color: var(--white);
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: normal;
+  @media (--medium-screen) {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.brochure__list {
+  text-align: center;
+  @media (--medium-screen) {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    margin: 0 -15px 40px;
+  }
+}
+
+.brochure__itemHeading {
+  color: var(--white);
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 5px;
+  @media (--medium-screen) {
+    font-size: 35px;
+    line-height: 43px;
+  }
+}
+
+.brochure__itemDescription {
+  color: var(--white);
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.brochure__item {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  @media (--medium-screen) {
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 0 15px;
+    margin: 0 0 30px;
+    width: 50%;
+  }
+}
+
+.brochure__itemIcon {
+  color: var(--white);
+  min-width: 30px;
+  min-height: 30px;
+  max-width: 30px;
+  max-height: 30px;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+  @media (--medium-screen) {
+    margin-top: 8px;
+    margin-right: 25px;
+  }
+}
+
+.brochure__itemText {
+  display: flex;
+  flex-direction: column;
+  @media (--medium-screen) {
+    max-width: 325px;
+    width: 325px;
+  }
+}
+
+.brochure__cards {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  @media (--medium-screen) {
+    flex-direction: row;
+  }
+}
+
+.brochure__card {
+  background-color: #fbfbfb;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+  display: block;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 30px;
+  transform: translateY(0);
+  transition: box-shadow 0.2s, transform 0.2s;
+
+  @media (--medium-screen) {
+    margin: 0 15px 0;
+    width: 50%;
+    &:hover {
+      transform: translateY(-15px);
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.brochure__cardImage {
+  display: flex;
+  align-items: flex-end;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  position: relative;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--white);
+
+  @media (--medium-screen) {
+    height: 300px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+.brochure__cardBody {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100px;
+  @media (--medium-screen) {
+    min-height: 300px;
+    font-size: 20px;
+    padding: 40px;
+    line-height: 28px;
+  }
+}
+
+.brochure__cardDescription {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 20px;
+  @media (--medium-screen) {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.brochure__cardCallToAction {
+  color: var(--blue);
+  font-size: 14px;
+  line-height: 22px;
+  @media (--medium-screen) {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
